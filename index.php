@@ -11,7 +11,7 @@
 <nav class='navbar navbar-default'>
     <div class="center-block">
 
-        <h1 class='page-header text-center'>Twoje Książki</h1>
+        <h1 class='page-header text-center'>Your Books</h1>
 
     </div>
     </div>
@@ -22,7 +22,6 @@
         <div class="col-xs-12 col-sm-6 ">
             <div class=''>
                 <div class="bookShelf list-group">
-
                 </div>
             </div>
         </div>
@@ -30,7 +29,7 @@
 
         <div class="col-xs-12 col-sm-6">
             <div class='page-header'>
-                <h3 class='text-center'>Dodaj nową pozycję</h3>
+                <h3 class='text-center'>New postion</h3>
             </div>
 
             <div class='panel-body'>
@@ -38,21 +37,21 @@
                     <form class='form-horizontal' id="addBook" action="" method="POST">
                         <div class='form-group'>
                             <br>
-                            <label>Podaj tytuł książki:</label>
+                            <label>Title:</label>
                             <br>
                             <input class='form-control' id="bookTitle" type="text" name="name"
-                                   placeholder="podaj tytuł książki">
+                                   placeholder="e.g. Harry Potter">
                             <br>
-                            <label>Podaj autora książki:</label>
+                            <label>Author:</label>
                             <br>
                             <input class='form-control' id="bookAuthor" type="text" name="author"
-                                   placeholder="podaj imię i nazwisko autora">
+                                   placeholder="Full Name">
                             <br>
-                            <label>Dodaj tytuł książki:</label>
+                            <label>Description:</label>
                             <br>
                             <textarea class='form-control' id="bookDesc" name='description'></textarea>
                             <br>
-                            <input class='btn btn-primary' type="submit" value="Dodaj">
+                            <input class='btn btn-primary' type="submit" value="Send">
                         </div>
                     </form>
                 </div>

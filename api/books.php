@@ -26,4 +26,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'DELETE') {
     $delBook = new Book();
     $delBook->deleteFromDB($conn, $del_vars['id']);
 }
-

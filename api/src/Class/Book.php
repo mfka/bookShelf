@@ -2,19 +2,15 @@
 
 class Book implements JsonSerializable
 {
-
-
-    private $id;
-    private $name;
-    private $author;
-    private $description;
+    private $id= -1;
+    private $name= '';
+    private $author = '';
+    private $description = '';
+    private $conn = null;
 
     public function __construct()
     {
-        $this->id = -1;
-        $this->name = '';
-        $this->author = '';
-        $this->description = '';
+      $this->conn = Database::getConnection();
     }
 
     public function jsonSerialize()
@@ -29,9 +25,8 @@ class Book implements JsonSerializable
 
     public function getBookByID($id = null, $limit = null)
     {
-        $conn = Database::getConnection();
+        // $conn = Database::getConnection();
         $query = 'SELECT * FROM books';
-
         if (!is_null($id)) {
             $query .= ' WHERE id = :id';
         }
@@ -41,7 +36,7 @@ class Book implements JsonSerializable
         }
 
         try {
-            $stmt = $conn->prepare($query);
+            $stmt = $this->conn->prepare($query);
             $stmt->bindParam(':id', $id);
             $stmt->bindParam(':limit', $limit);
             $stmt->execute();
@@ -49,13 +44,10 @@ class Book implements JsonSerializable
                 return $stmt->fetch(PDO::FETCH_ASSOC);
             }
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
         } catch (PDOException $e) {
             error_log($e->getMessage());
             return ($e->getMessage());
         }
-
     }
 
     public function create($conn, $name, $author, $description)
@@ -141,5 +133,4 @@ class Book implements JsonSerializable
     {
         $this->description = $description;
     }
-
 }

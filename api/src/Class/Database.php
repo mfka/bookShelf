@@ -6,7 +6,7 @@ class Database
     static protected $db_conn = null;
     static private $db_host = "localhost";
     static private $db_user = "root";
-    static private $db_pass = "coderslab";
+    static private $db_pass = "polcode";
     static private $db_name = "Books_db";
     static private $charset = 'utf8';
     static private $db_opt = array(

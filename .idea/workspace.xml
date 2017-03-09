@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4591c80-90fb-4bd3-9a7a-56d174f54aef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/Class/Book.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/Class/Database.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/autoLoader.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/book.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/db_actions.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/books.php" afterPath="$PROJECT_DIR$/api/books.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/Class/Book.php" afterPath="$PROJECT_DIR$/api/src/Class/Book.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,16 +20,13 @@
       <file leaf-file-name="Book.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/src/Class/Book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state relative-caret-position="558">
+              <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
               <folding>
-                <marker date="1489040114753" expanded="true" signature="701:720" ph="SELECT * FRO... books" />
-                <marker date="1489040114753" expanded="true" signature="701:791" ph="SELECT * FRO... books" />
-                <marker date="1489040114753" expanded="true" signature="701:792" ph="SELECT * FRO... books" />
-                <marker date="1489040114753" expanded="true" signature="701:799" ph="SELECT * FRO... books" />
-                <marker date="1489040114753" expanded="true" signature="1280:1400" ph="INSERT INTO books... " />
-                <marker date="1489040114753" expanded="true" signature="1588:1806" ph="UPDATE books... " />
-                <marker date="1489040114753" expanded="true" signature="1945:1972" ph="DELETE FROM " />
+                <marker date="1489041000010" expanded="true" signature="668:687" ph="SELECT * FRO... books" />
+                <marker date="1489041000010" expanded="true" signature="1416:1536" ph="INSERT INTO books... " />
+                <marker date="1489041000010" expanded="true" signature="1724:1942" ph="UPDATE books... " />
+                <marker date="1489041000010" expanded="true" signature="2081:2108" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -286,12 +276,12 @@
       <option name="presentableId" value="Default" />
       <updated>1488992606158</updated>
       <workItem from="1488992607360" duration="2567000" />
-      <workItem from="1489038219529" duration="2121000" />
+      <workItem from="1489038219529" duration="2787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4688000" />
+    <option name="totallyTimeSpent" value="5354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="1176" extended-state="6" />
@@ -351,13 +341,10 @@
         <state relative-caret-position="810">
           <caret line="45" column="44" lean-forward="false" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
-            <marker date="1489040114753" expanded="true" signature="701:720" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="701:791" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="701:792" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="701:799" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="1280:1400" ph="INSERT INTO books... " />
-            <marker date="1489040114753" expanded="true" signature="1588:1806" ph="UPDATE books... " />
-            <marker date="1489040114753" expanded="true" signature="1945:1972" ph="DELETE FROM " />
+            <marker date="1489041000010" expanded="true" signature="668:687" ph="SELECT * FRO... books" />
+            <marker date="1489041000010" expanded="true" signature="1416:1536" ph="INSERT INTO books... " />
+            <marker date="1489041000010" expanded="true" signature="1724:1942" ph="UPDATE books... " />
+            <marker date="1489041000010" expanded="true" signature="2081:2108" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -412,16 +399,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/Class/Book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        <state relative-caret-position="558">
+          <caret line="43" column="43" lean-forward="true" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
           <folding>
-            <marker date="1489040114753" expanded="true" signature="701:720" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="701:791" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="701:792" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="701:799" ph="SELECT * FRO... books" />
-            <marker date="1489040114753" expanded="true" signature="1280:1400" ph="INSERT INTO books... " />
-            <marker date="1489040114753" expanded="true" signature="1588:1806" ph="UPDATE books... " />
-            <marker date="1489040114753" expanded="true" signature="1945:1972" ph="DELETE FROM " />
+            <marker date="1489041000010" expanded="true" signature="668:687" ph="SELECT * FRO... books" />
+            <marker date="1489041000010" expanded="true" signature="1416:1536" ph="INSERT INTO books... " />
+            <marker date="1489041000010" expanded="true" signature="1724:1942" ph="UPDATE books... " />
+            <marker date="1489041000010" expanded="true" signature="2081:2108" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

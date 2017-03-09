@@ -30,15 +30,26 @@ class Book implements JsonSerializable
     public function getBookByID($id = null, $limit = null)
     {
         $conn = Database::getConnection();
+        $query = 'SELECT * FROM books';
+
+        if (!is_null($id)) {
+            $query .= ' WHERE id = :id';
+        }
+
+        if (!is_null($limit)) {
+            $query .= ' LIMIT :limit';
+        }
 
         try {
-            $stmt = $conn->prepare('SELECT * FROM books' . (is_null($id) ? '' : 'WHERE id = :id') . (is_null($limit) ? ' LIMIT :limit' : ''));
+            $stmt = $conn->prepare($query);
             $stmt->bindParam(':id', $id);
             $stmt->bindParam(':limit', $limit);
-            if ($limit === 1) {
-                return $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $stmt->execute();
+            if (!is_null($id)) {
+                return $stmt->fetch(PDO::FETCH_ASSOC);
             }
-            return $stmt->fetch(PDO::FETCH_ASSOC);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 
         } catch (PDOException $e) {
             error_log($e->getMessage());

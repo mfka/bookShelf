@@ -1,25 +1,6 @@
 <?php
-function autoLoader($className)
-{
-    $dirs = array(
-        '/',
-        '/Class/',
-    );
 
-    $files = array(
-        '%s.php',
-    );
-
-    foreach ($dirs as $dir) {
-        foreach ($files as $file) {
-            $path = __DIR__ . $dir . sprintf($file, $className);
-            if (file_exists($path)) {
-                include_once $path;
-                return;
-            }
-        }
-    }
-
-}
-
-spl_autoload_register('autoLoader');
+ini_set("log_errors", 1);
+ini_set('display_errors', 0);
+ini_set("error_log", __DIR__ . "/tmp/php-error.log");
+require_once __DIR__ . '/autoLoader.php';

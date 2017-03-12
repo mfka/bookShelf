@@ -26,6 +26,7 @@ class Database
         }
     }
 
+
 // Close connection
     static public function closeConnection($conn)
     {

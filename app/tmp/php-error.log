@@ -1,0 +1,36 @@
+[12-Mar-2017 21:49:13 Europe/Berlin] czesc
+[12-Mar-2017 21:51:12 Europe/Berlin] PHP Notice:  Undefined variable: db_host in /var/www/html/bookShelf/app/class/Database.php on line 34
+[12-Mar-2017 21:51:12 Europe/Berlin] PHP Stack trace:
+[12-Mar-2017 21:51:12 Europe/Berlin] PHP   1. {main}() /var/www/html/bookShelf/app/books.php:0
+[12-Mar-2017 21:51:12 Europe/Berlin] PHP   2. Book->__construct() /var/www/html/bookShelf/app/books.php:11
+[12-Mar-2017 21:51:12 Europe/Berlin] PHP   3. Database::getConnection() /var/www/html/bookShelf/app/class/Book.php:13
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP Notice:  Undefined variable: db_host in /var/www/html/bookShelf/app/class/Database.php on line 34
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP Stack trace:
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   1. {main}() /var/www/html/bookShelf/app/books.php:0
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   2. Book->__construct() /var/www/html/bookShelf/app/books.php:11
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   3. Database::getConnection() /var/www/html/bookShelf/app/class/Book.php:13
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP Notice:  Undefined variable: db_host in /var/www/html/bookShelf/app/class/Database.php on line 34
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP Stack trace:
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   1. {main}() /var/www/html/bookShelf/app/books.php:0
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   2. Book->__construct() /var/www/html/bookShelf/app/books.php:11
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   3. Database::getConnection() /var/www/html/bookShelf/app/class/Book.php:13
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP Notice:  Undefined variable: db_host in /var/www/html/bookShelf/app/class/Database.php on line 34
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP Stack trace:
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   1. {main}() /var/www/html/bookShelf/app/books.php:0
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   2. Book->__construct() /var/www/html/bookShelf/app/books.php:11
+[12-Mar-2017 21:51:13 Europe/Berlin] PHP   3. Database::getConnection() /var/www/html/bookShelf/app/class/Book.php:13
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP Notice:  Undefined variable: db_host in /var/www/html/bookShelf/app/class/Database.php on line 34
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP Stack trace:
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP   1. {main}() /var/www/html/bookShelf/app/books.php:0
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP   2. Book->__construct() /var/www/html/bookShelf/app/books.php:11
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP   3. Database::getConnection() /var/www/html/bookShelf/app/class/Book.php:13
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP Notice:  Undefined variable: db_host in /var/www/html/bookShelf/app/class/Database.php on line 34
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP Stack trace:
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP   1. {main}() /var/www/html/bookShelf/app/books.php:0
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP   2. Book->__construct() /var/www/html/bookShelf/app/books.php:11
+[12-Mar-2017 21:51:14 Europe/Berlin] PHP   3. Database::getConnection() /var/www/html/bookShelf/app/class/Book.php:13
+[12-Mar-2017 21:51:15 Europe/Berlin] PHP Notice:  Undefined variable: db_host in /var/www/html/bookShelf/app/class/Database.php on line 34
+[12-Mar-2017 21:51:15 Europe/Berlin] PHP Stack trace:
+[12-Mar-2017 21:51:15 Europe/Berlin] PHP   1. {main}() /var/www/html/bookShelf/app/books.php:0
+[12-Mar-2017 21:51:15 Europe/Berlin] PHP   2. Book->__construct() /var/www/html/bookShelf/app/books.php:11
+[12-Mar-2017 21:51:15 Europe/Berlin] PHP   3. Database::getConnection() /var/www/html/bookShelf/app/class/Book.php:13

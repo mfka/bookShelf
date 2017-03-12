@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/src/config.php';
+
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $bookId = null;
     $limit = null;
@@ -9,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     }
     $books = new Book();
     $booksList = $books->getBookByID($bookId, $limit);
+
     echo json_encode($booksList);
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

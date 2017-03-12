@@ -17,7 +17,7 @@ $(function () {
 //Show Books from DataBase
     function showBooks(id) {
         $.ajax({
-            url: 'api/books.php',
+            url: 'app/books.php',
             type: 'GET',
             data: {
                 id: id
@@ -56,7 +56,7 @@ $(function () {
             // if not is taking from DB
         } else {
             $.ajax({
-                url: 'api/books.php',
+                url: 'app/books.php',
                 type: 'GET',
                 data: {
                     id: clickedId
@@ -71,8 +71,8 @@ $(function () {
                     authorDiv.html(result.author);
                     //add action buttons
                     authorDiv.parent().find('div.buttons').append('<a class="btn btn-xs btn-primary" id="hideDesc" href="#"> <span class="glyphicon glyphicon glyphicon-chevron-up" aria-hidden="true"></span>Hide</a> ');
-                    authorDiv.parent().find('div.buttons').append('<a class="btn btn-xs btn-danger" id="del" href="#">Usuń Pozycję</a> ');
-                    authorDiv.parent().find('div.buttons').append('<a class="btn btn-xs btn-warning" id="edit" href="#">Edytuj</a>');
+                    authorDiv.parent().find('div.buttons').append('<a class="btn btn-xs btn-danger" id="del" href="#">Remove</a> ');
+                    authorDiv.parent().find('div.buttons').append('<a class="btn btn-xs btn-warning" id="edit" href="#">Edit</a>');
                     descDiv.parent().children().show('slow');
                     //Toggle Info
                     $('a#hideDesc').on('click', function (e) {
@@ -85,7 +85,7 @@ $(function () {
                         //declare element form .bookList to remove
                         var listElRemove = ($(this).parent().parent());
                         $.ajax({
-                            url: 'api/books.php',
+                            url: 'app/books.php',
                             type: 'DELETE',
                             data: {
                                 id: $(this).parent().parent().find('h4.bookTitle').attr('data-id')
@@ -122,9 +122,9 @@ $(function () {
                             $(this).parent().parent().find('.bookDescription').html(editedDesc);
                             var parentDesc = $(this).parent().parent().find('.bookDescription');
                             //add cancel Edit button
-                            $('<button class="btn btn-xs btn-primary" id="cancelEdit"  type="submit">Anuluj</button>').insertAfter(parentDesc);
+                            $('<button class="btn btn-xs btn-primary" id="cancelEdit"  type="submit">Cancel</button>').insertAfter(parentDesc);
                             // add conifrm Edit button
-                            $('<button class="btn btn-primary btn-xs" id="confirmEdit" type="submit">Zapisz zmiany</button></').insertAfter(parentDesc);
+                            $('<button class="btn btn-primary btn-xs" id="confirmEdit" type="submit">Save</button>').insertAfter(parentDesc);
                             //Get previous look!
                             function backToNormal(clickedButton) {
                                 ///Remove title field
@@ -154,7 +154,7 @@ $(function () {
                                 e.preventDefault();
                                 var toRemove = $(this).parent();
                                 $.ajax({
-                                    url: 'api/books.php',
+                                    url: 'app/books.php',
                                     type: 'PUT',
                                     dataType: 'json',
                                     data: {
@@ -199,7 +199,7 @@ $(function () {
             alert('Please fill up all fields');
         } else {
             $.ajax({
-                url: 'api/books.php',
+                url: 'app/books.php',
                 type: 'POST',
                 data: $('form#addBook').serialize(),
                 dataType: 'json',

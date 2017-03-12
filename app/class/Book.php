@@ -33,7 +33,6 @@ class Book implements JsonSerializable {
             $query .= ' LIMIT :limit';
         }
 
-        error_log($query);
         try {
             $stmt = $this->conn->prepare($query);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
